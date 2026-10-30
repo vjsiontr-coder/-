@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="عالم كرة القدم — منصة تعليمية تفاعلية عن الدوريات والأندية وأساطير اللعبة.">
+  <title> مُدرج   |  Modraj</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span class="live-dot"></span> منصة كروية تعليمية • محتوى دائم لا يحتاج تحديثًا يوميًا</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="العودة للرئيسية">
+      <span class="brand-mark">⚽</span><span><b> مُدرج  </b><small>FOOTBALL WORLD</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <nav id="mainNav">
+      <a href="#leagues">الدوريات</a><a href="#clubs">الأندية</a><a href="#legends">الأساطير</a><a href="#rules">دليل اللعبة</a><a href="#about">عن المنصة</a>
+    </nav>
+    <div class="header-tools"><button class="language-toggle" id="languageToggle" type="button" aria-label="Change language">EN</button><a class="header-cta" href="#leagues" data-ar="ابدأ الاستكشاف" data-en="Start exploring">ابدأ الاستكشاف <span>←</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> أكثر من مجرد لعبة</div>
+        <h1>كل دوري له<br><em>حكايته.</em></h1>
+        <p>اكتشف تاريخ البطولات، تعرّف على الأندية العريقة، واقترب من أساطير صنعت تاريخ كرة القدم — كل ذلك في مكان واحد.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#leagues">استكشف الدوريات <span>↙</span></a><a class="btn btn-ghost" href="#about">اكتشف المنصة</a></div>
+        <div class="hero-stats"><div><b>05</b><span>دوريات كبرى</span></div><i></i><div><b>∞</b><span>حكايات كروية</span></div><i></i><div><b>01</b><span>وجهة واحدة</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="تصميم كروي فني">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-ball">⚽</div>
+        <div class="float-card card-top"><span class="float-icon">🏆</span><span><b>تاريخ يصنع المجد</b><small>بطولات لا تُنسى</small></span></div>
+        <div class="float-card card-bottom"><span class="mini-shield">FW</span><span><b>عالمك الكروي</b><small>ابدأ رحلتك الآن</small></span></div>
+        <div class="hero-number">90<span>'</span></div>
+      </div>
+      <div class="hero-bottom-label">THE BEAUTIFUL GAME <span>✳</span> منذ البداية وحتى الأسطورة</div>
+    </section>
+
+    <section class="section leagues-section" id="leagues">
+      <div class="section-head"><div><div class="eyebrow"><span></span> بوابتك إلى عالم البطولات</div><h2>اختر <em>دوريك.</em></h2></div><p>خمس وجهات كروية، لكل واحدة منها هوية وتاريخ وأندية صنعت أمجادها.</p></div>
+      <div class="league-grid" id="leagueGrid"></div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="feature-icon">✦</div><div><small>رحلتك لا تتوقف عند الشعار</small><h3>ادخل إلى تفاصيل كل دوري.</h3><p>من قصة البطولة إلى أشهر الأندية واللاعبين — اكتشف كرة القدم بطريقة مختلفة.</p></div><a href="#clubs" class="text-link">تعرّف على الأندية <span>←</span></a>
+    </section>
+
+    <section class="section clubs-section" id="clubs">
+      <div class="section-head"><div><div class="eyebrow"><span></span> قمصان وألوان وتاريخ</div><h2>أندية <em>لا تُنسى.</em></h2></div><p>تصفّح مجموعة من الأندية الشهيرة، وافتح بطاقة كل نادٍ لمعرفة قصته.</p></div>
+      <div class="filter-row"><div class="filter-pills" id="clubFilters"><button class="pill active" data-filter="all">الكل</button></div><label class="searchbox"><span>⌕</span><input id="clubSearch" type="search" placeholder="ابحث عن نادٍ..." aria-label="ابحث عن ناد"></label></div>
+      <div class="club-grid" id="clubGrid"></div>
+    </section>
+
+    <section class="legends-section" id="legends">
+      <div class="section-head light-head"><div><div class="eyebrow"><span></span> أسماء كتبت التاريخ</div><h2>أساطير <em>اللعبة.</em></h2></div><p>نجوم ألهموا الملايين، وتركوا بصمتهم في ذاكرة الجماهير.</p></div>
+      <div class="legend-grid" id="legendGrid"></div>
+      <p class="disclaimer light-note">الصور هنا رسومات فنية توضيحية، وليست صورًا فوتوغرافية للاعبين.</p>
+    </section>
+
+    <section class="section guide-section" id="rules">
+      <div class="section-head"><div><div class="eyebrow"><span></span> افهم اللعبة أكثر</div><h2>دليل <em>المشجع.</em></h2></div><p>معلومات ثابتة تساعدك على فهم تفاصيل كرة القدم ومتابعة اللعبة بثقة.</p></div>
+      <div class="guide-grid">
+        <article class="guide-card"><span class="guide-no">01</span><div class="guide-symbol">📐</div><h3>قوانين أساسية</h3><p>تعرّف على التسلل، الركلات الحرة، ركلات الجزاء، والبطاقات التحكيمية.</p><button data-guide="rules">اقرأ الدليل <span>←</span></button></article>
+        <article class="guide-card"><span class="guide-no">02</span><div class="guide-symbol">🧠</div><h3>مراكز اللاعبين</h3><p>من حارس المرمى إلى رأس الحربة؛ تعرّف على الأدوار داخل الملعب.</p><button data-guide="positions">اكتشف المراكز <span>←</span></button></article>
+        <article class="guide-card"><span class="guide-no">03</span><div class="guide-symbol">🏆</div><h3>تاريخ البطولات</h3><p>جولة تعريفية في أشهر البطولات المحلية والقارية والعالمية.</p><button data-guide="tournaments">ابدأ الجولة <span>←</span></button></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-badge">FW<span>⚽</span></div><div><div class="eyebrow"><span></span> عن مُدرج</div><h2>شغفٌ يجمعنا،<br><em>ومعرفةٌ تبقى.</em></h2><p>منصة تعليمية مستقلة للتعرّف على تاريخ كرة القدم ودورياتها وأنديتها ونجومها. صُممت لتكون مرجعًا بسيطًا وجميلًا يمكن استكشافه في أي وقت، دون الحاجة إلى متابعة الأخبار اليومية.</p></div><div class="about-side"><div>01 <span>محتوى تعريفي</span></div><div>02 <span>تصميم تفاعلي</span></div><div>03 <span>مناسب للجوال</span></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">⚽</span><span><b>مُدرج   </b><small>MODRAJ</small></span></a><p>صُنع بحب لعشّاق اللعبة الجميلة.</p><a href="#home" class="back-top">العودة للأعلى ↑</a><small class="copyright">© <span id="year"></span> مُدرج — مشروع تعليمي</small></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
